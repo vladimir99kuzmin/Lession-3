@@ -1,0 +1,31 @@
+@media (max-width: 1131px) {
+    .also .products_elementHandler {
+        .products_element {
+            display: none;
+        }
+        .products_element:nth-child(1) {
+            display: block;
+        }
+        .products_element:nth-child(2) {
+            display: block;
+        }
+    }
+}
+
+.goodprew {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    img {
+        pointer-events: none;
+    }
+    .swipe_button {
+        cursor: pointer;
+        background: rgba(42, 42, 42, 0.15);
+        padding: 13px 17px 13px 17px;
+        &:hover svg path{            
+            fill: #f16d7f;
+        }
+    }
+}
