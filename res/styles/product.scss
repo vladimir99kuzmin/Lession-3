@@ -11,21 +11,113 @@
         }
     }
 }
-
+.goods {
+    .products {
+        margin-top: 665px;
+    }
+}
 .goodprew {
+    user-select: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #f7f7f7;
     img {
         pointer-events: none;
+        min-width: 1px;
+    }
+    svg {
+        user-select: none;
+        pointer-events: none;
     }
     .swipe_button {
         cursor: pointer;
         background: rgba(42, 42, 42, 0.15);
         padding: 13px 17px 13px 17px;
-        &:hover svg path{            
+        &:hover .svg_arrow {
             fill: #f16d7f;
+        }
+    }
+}
+.good_preview {
+    position: relative;
+    border: 1px solid #eaeaea;
+}
+.good_information {
+    width: 71.3%;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    background: white;
+    position: absolute;
+    bottom: -550px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border: 1px solid #eaeaea;
+}
+.good_information_box {
+    margin-top: 65px;
+    font-weight: 300;
+    width: 640px;
+    height: 295px;
+    text-align: center;
+    .good_heading {
+        font-size: 14px;
+        line-height: 17px;
+        color: #f16d7f;
+    }
+    .good_heading_underline {
+        margin: 12px auto;
+        width: 62px;
+        border: none;
+        border-bottom: 3px solid #f16d7f;
+    }
+    .good_name {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4d4d4d;
+        margin-bottom: 50px;
+    }
+    .good_description {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5e5e5e;
+        margin-bottom: 32px;
+    }
+    .good_price {
+        font-size: 24px;
+        line-height: 29px;
+        color: #f16d7f;
+        margin-bottom: 65px;
+        &::before {
+            content: "$ ";
+        }
+    }
+    .good_price_underline {
+        border: none;
+        border-bottom: 1px solid #EAEAEA;;
+    }
+    .popular_filters {
+        margin: 50px auto;
+        max-width: 380px;
+        justify-content: space-between;
+        img {
+            margin-left: 10px;
+        }
+        .filter_element:not(:last-child) {
+            margin-right: 22px;
+        }
+    }
+    .products_button {
+        svg {
+            margin-right: 22px;
+            
+        }
+        &:hover path {
+            fill: white;
         }
     }
 }

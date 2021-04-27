@@ -36,7 +36,11 @@ button {
 .hidden {
     display: block;
     position: absolute;
-    left: -1vw;
+    top: -1000vh;
+    left: -1000vw;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
     opacity: 0;
 }
 /********header********/
@@ -318,7 +322,9 @@ button {
 }
 
 .products_button {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin: 0 auto;
     color: #f16d7f;
