@@ -1,0 +1,115 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet' href='res/styles/style.css')
+    title SHOP OF LUXERIOUS FASHION
+header.header
+    .container
+        .logoHandler
+            a.logo(href='index.html')
+                img(src='res/images/logo.png' alt='')
+            a.search(href='#')
+                img(src='res/images/search-icon.png' alt='')
+        nav.navigation
+            label.navigation_element.navigation_menu(for='show_menu')
+                img(src='res/images/menu-icon.png' alt='')
+            a.navigation_element(href='#')
+                img(src='res/images/account.png' alt='')
+            a.navigation_element.shop_cart(href='#')
+                img(src='res/images/cart.png' alt='')
+                sup 2
+input#show_menu.hidden(type='checkbox')
+.testMenu
+    | Это тестовое меню
+section.catalog_intro
+    .container
+        h1.catalog_heading
+            | SHOPPING CART
+main.container
+    .shop_box
+        .elements_and_buttons
+            .cart_elementHandler
+                h2.hidden 
+                    | MY GOODS
+                .cart_element
+                    img.cart_element_image(src="res/images/product4.png" alt="")
+                    .cart_element_info
+                        h3.cart_element_name
+                        | MANGO  PEOPLE  T-SHIRT
+                        p.cart_element_price
+                        | Price: 
+                        span.price 300 	
+                        p.cart_element_color
+                        | Color: Red	
+                        p.cart_element_size
+                        | Size: Xl	 	
+                        p.cart_element_quantity
+                        | Quantity: 
+                        span.cart_element_quantity_count 2
+                    .cart_delete_element
+                .cart_element
+                    img.cart_element_image(src="res/images/product7.png" alt="")
+                    .cart_element_info
+                        h3.cart_element_name
+                        | MANGO  PEOPLE  T-SHIRT
+                        p.cart_element_price
+                        | Price: 
+                        span.price 300 		
+                        p.cart_element_color
+                        | Color: Red	
+                        p.cart_element_size
+                        | Size: Xl	 	
+                        p.cart_element_quantity
+                        | Quantity:
+                        span.cart_element_quantity_count 2
+                    .cart_delete_element
+            .cart_buttons 
+                button 
+                    |CLEAR SHOPPING CART
+                button 
+                    |CONTINUE SHOPPING
+        form.shipping_adress(action="#")
+            h2.shipping_adress_heading SHIPPING ADRESS            
+            input.shipping_adress_input(placeholder="City")
+            input.shipping_adress_input(placeholder="State")
+            input.shipping_adress_input(placeholder="Postcode / Zip")
+            button.shipping_button_submit(type="submit") GET A QUOTE
+            .shipping_adress_total
+                .shipping_adress_total_box
+                    p.shiping_sub_total SUB TOTAL 
+                        span.shiping_sub_total_count.price 900
+                    p.shiping_grand_total GRAND TOTAL     
+                        span.shiping_grand_total_count.price 900  
+                    hr.shipping_adress_total_line
+                    button.shipping_button_proceed PROCEED TO CHECKOUT
+footer.footer
+    .container
+    aside.subscribe
+        h2.hidden Subscribtion
+        .subscribe_box.container
+            .review
+                h3.hidden Review
+                img(src='res/images/Intersect.png' alt='')
+                p
+                    | "Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum"
+            form.subscribe_forms(action='#')
+                h3 SUBSCRIBE
+                p FOR OUR NEWLETTER AND PROMOTION
+                .subscribe_forms_inputs
+                    input(type='email' placeholder='Enter Your Email' required='' pattern='\S+@[a-z]+.[a-z]+')
+                    button(href='#')
+                        | Subscribe
+    .coryright_and_social.container
+        p.copyright
+            | &copy; 2021 Brand All Rights Reserved.
+        .social
+            a(href='#')
+                img(src='res/images/social1.svg' alt='')
+            a(href='#')
+                img(src='res/images/social2.svg' alt='')
+            a(href='#')
+                img(src='res/images/social3.svg' alt='')
+            a(href='#')
+                img(src='res/images/social4.svg' alt='')
